@@ -5,7 +5,7 @@ import { Hero } from '@/components/hero'
 import { Footer } from '@/components/footer'
 import { Animations } from '@/components/animations'
 
-export default function ComingSoonPage() {
+export default function Home() {
   return (
     <div className="min-h-screen bg-black text-white overflow-hidden">
       <Background />
