@@ -9,7 +9,7 @@ export function Hero() {
         <div className="flex flex-col items-center justify-center mx-auto">
           <div className="relative flex justify-center items-center mx-auto w-screen h-auto aspect-video px-4 md:px-6">
               <Image
-                src="kho-dark.png"
+                src="/kho-dark.png"
                 alt="Logo image"
                 fill
                 priority
