@@ -16,7 +16,7 @@ export function Newsletter() {
 
     try {
       // Using Formbold integration
-      const response = await fetch('https://api.formbold.com/submit/67a3b1c3b2c3a8e4f5g6h7i8', {
+      const response = await fetch('https://formbold.com/s/3VKy0', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
