@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     shortcut: { url: "/favicon.ico", type: "image/x-icon" },
     icon: [
       { url: "/favicon/favicon.ico", type: "image/x-icon" },
-      new URL("/favicon/favicon.ico", `${NEXT_PUBLIC_VERCEL_URL}/favicon.ico`),
+      new URL("/favicon/favicon.ico", "https://kimhabork.com/favicon.ico"),
       {
         url: "/favicon.svg",
         type: "image/svg",
