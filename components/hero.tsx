@@ -48,15 +48,15 @@ export function Hero() {
             <Newsletter />
           </div>
         </div>
-        <div className="relative flex items-center justify-center mx-auto md:p-3 lg:p-6 hidden md:block lg:block">
-          <div className="flex items-center justify-center w-full aspect-[4/5] rounded-xl">
+        <div className="relative flex items-center justify-center mx-auto md:m-3 lg:m-6 hidden md:block lg:block">
+          <div className="flex items-center justify-center w-full aspect-[9/16]">
             <Image
-              src="https://ik.imagekit.io/kimhabork/assets/coming-cover.jpg"
+              src="https://ik.imagekit.io/kimhabork/assets/demin-recon.png"
               alt="hero image"
               width={1200}
               height={660}
               priority
-              className="object-cever w-full h-auto rounded-xl"
+              className="object-cever w-full h-auto"
             />
           </div>
         </div>
