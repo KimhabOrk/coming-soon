@@ -53,7 +53,7 @@ export function Newsletter() {
           placeholder="Enter your email"
           required
           disabled={loading}
-          className="w-full px-6 py-4 bg-white/5 border border-white/10 rounded-sm text-white placeholder-gray-600 focus:outline-none focus:border-primary transition-all duration-300 backdrop-blur-sm disabled:opacity-50"
+          className="w-full px-6 py-4 bg-muted border border-white/30 rounded-sm text-muted-foreground placeholder-gray-5'.'00 focus:outline-none focus:border-primary transition-all duration-300 backdrop-blur-sm disabled:opacity-50"
           style={{
             animation: 'fadeInUp 1.4s ease-out',
           }}

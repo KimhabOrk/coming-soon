@@ -1,6 +1,6 @@
 import type { Viewport, Metadata } from 'next'
 import { Geist, Geist_Mono, Playfair_Display } from 'next/font/google'
-import { Analytics } from '@vercel/analytics/next'
+import { GoogleAnalytics } from "@next/third-parties/google"
 import './globals.css'
 
 const _geist = Geist({ subsets: ["latin"] });
@@ -139,7 +139,7 @@ export default function RootLayout({
     <html lang="en">
       <body className="font-sans antialiased">
         {children}
-        <Analytics />
+        <GoogleAnalytics gaId="G-9YNFYHYP08" />
       </body>
     </html>
   )

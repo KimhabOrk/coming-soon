@@ -38,7 +38,24 @@ export function Background() {
             animation: 'float 25s ease-in-out infinite reverse',
           }}
         />
-
+        <div
+          className="absolute w-96 h-96 rounded-full opacity-10"
+          style={{
+            background: 'radial-gradient(circle, #EE1A4E 0%, transparent 70%)',
+            top: '40%',
+            right: '30%',
+            animation: 'float 20s ease-in-out infinite',
+          }}
+        />
+        <div
+          className="absolute w-80 h-80 rounded-full opacity-5"
+          style={{
+            background: 'radial-gradient(circle, #EE1A4E 0%, transparent 70%)',
+            bottom: '60%',
+            left: '1.5%',
+            animation: 'float 25s ease-in-out infinite reverse',
+          }}
+        />
         {/* Grid pattern */}
         <div
           className="absolute inset-0 opacity-[0.02]"
