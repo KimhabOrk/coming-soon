@@ -5,7 +5,10 @@ import './globals.css'
 
 const _geist = Geist({ subsets: ["latin"] });
 const _geistMono = Geist_Mono({ subsets: ["latin"] });
-const _playfair = Playfair_Display({ subsets: ["latin"] });
+const _serif = Playfair_Display({ 
+  subsets: ["latin"],
+  variable: "--font-serif",
+});
 
 const NEXT_PUBLIC_VERCEL_URL = process.env.NEXT_PUBLIC_VERCEL_URL;
 

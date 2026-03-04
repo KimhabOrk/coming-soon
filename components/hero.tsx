@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export function Hero() {
   return (
-    <main className="relative z-10 min-h-screen px-4 py-8">
+    <main className="relative z-10 min-h-screen px-4 md:px-6 lg:px-8 py-8">
       {/* Logo/Brand section */}
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-1 my-12 md:my-16">
         <div className="relative flex items-center justify-center mx-auto hidden md:block lg:block">

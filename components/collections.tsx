@@ -2,7 +2,7 @@ import { Sparkles } from 'lucide-react'
 
 export function Collections() {
   return (
-    <section className="relative z-10 min-h-screen flex flex-col items-center justify-center px-4 py-24">
+    <section className="relative z-10 min-h-screen flex flex-col items-center justify-center px-4 md:px-6 lg:px-8 py-24">
       <div className="max-w-6xl mx-auto w-full">
         <h3
           className="text-4xl md:text-5xl font-light text-center mb-16"
