@@ -137,9 +137,9 @@ export default function RootLayout({
 } > ) {
   return (
     <html lang="en">
+      <GoogleTagManager gtmId="GTM-T7RWXN4P" />
       <body className="font-sans antialiased">
         {children}
-        <GoogleTagManager gtmId="GTM-T7RWXN4P" />
       </body>
     </html>
   )
