@@ -5,20 +5,20 @@ export function Hero() {
   return (
     <main className="relative z-10 min-h-screen px-4 py-8">
       {/* Logo/Brand section */}
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-1 mb-16">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-1 my-12 md:my-16">
         <div className="relatuive flex flex-col items-center justify-center mx-auto">
-          <div className="flex justify-center items-center mx-auto h-full">
+          <div className="flex justify-center items-center mx-auto w-full h-auto">
             <Image
               src="https://ik.imagekit.io/kimhabork/assets/kho-dark.png"
               width={800}
               height={194}
               alt="Logo image"
               priority
-              className="h-full w-full object-cover mb-3 md:mb-8"
+              className="h-auto w-full object-cover mb-3 md:mb-8"
             />
           </div>
             {/* Main heading */}
-            <div className="max-w-6xl mx-auto text-center space-y-4">
+            <div className="w-full mx-auto text-center space-y-4">
               <h2
                 className="text-3xl md:text-5xl lg:text-6xl font-semibold leading-tight text-white"
                 style={{
@@ -44,7 +44,7 @@ export function Hero() {
                 Affordable Luxury Fashion
               </p>
           </div>
-          <div className="flex justify-center items-center mx-auto hidden md:block lg:block">
+          <div className="flex justify-center items-center mx-auto hidden md:block lg:block mt-6 pt-6">
             <Newsletter />
           </div>
         </div>
@@ -53,7 +53,8 @@ export function Hero() {
             <Image
               src="https://ik.imagekit.io/kimhabork/assets/coming-cover.jpg"
               alt="hero image"
-              fill
+              width={1200}
+              height={660}
               priority
               className="object-cever w-full h-auto rounded-xl"
             />
