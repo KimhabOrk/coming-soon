@@ -3,9 +3,9 @@ import Image from "next/image";
 
 export function Hero() {
   return (
-    <main className="relative z-10 min-h-screen px-4 md:px-14 lg:px-16 py-8">
+    <main className="relative z-10 min-h-screen px-4 md:px-20 lg:px-24 py-8">
       {/* Logo/Brand section */}
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 justify-around gap-1 my-12 md:my-16">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 justify-center gap-1 my-12 md:my-16">
         <div className="relative flex items-center justify-center mx-auto hidden md:block lg:block">
           <div className="flex items-center justify-center w-full aspect-[4/5]">
             <Image
