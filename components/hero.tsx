@@ -51,7 +51,7 @@ export function Hero() {
         <div className="relative flex items-center justify-center mx-auto md:m-3 lg:m-6 hidden md:block lg:block">
           <div className="flex items-center justify-center w-full aspect-[9/16]">
             <Image
-              src="https://ik.imagekit.io/kimhabork/assets/demin-recon.png"
+              src="https://ik.imagekit.io/kimhabork/assets/indi.png"
               alt="hero image"
               width={1200}
               height={660}
