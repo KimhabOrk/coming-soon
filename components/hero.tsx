@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export function Hero() {
   return (
-    <main className="relative z-10 min-h-screen px-4 md:px-6 lg:px-8 py-8">
+    <main className="relative z-10 min-h-screen px-4 md:px-10 lg:px-12 py-8">
       {/* Logo/Brand section */}
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-1 my-12 md:my-16">
         <div className="relative flex items-center justify-center mx-auto hidden md:block lg:block">
@@ -32,23 +32,23 @@ export function Hero() {
             {/* Main heading */}
             <div className="w-full mx-auto text-center space-y-4">
               <h2
-                className="text-3xl md:text-5xl lg:text-6xl font-semibold leading-tight text-white"
+                className="text-3xl md:text-5xl lg:text-6xl font-semibold leading-tight text-white max-w-4xl md:max-w-2xl lg:max-w-2xl"
                 style={{
                   animation: "fadeInUp 1s ease-out",
                   fontFamily: "Playfair Display, serif",
                 }}
               >
-                <span className="block">Something</span>
-                <span className="block">
-                  <span className="text-primary inline-block animate-shimmer">
+                <span>Something</span>
+                <span>
+                  <span className="text-primary animate-shimmer">
                     Exquisite
                   </span>
                 </span>
-                <span className="block">is Coming</span>
+                <span>is Coming</span>
               </h2>
 
               <p
-                className="text-sm md:text-md text-gray-300 font-light leading-relaxed max-w-4xl mx-auto uppercase tracking-[0.15em]"
+                className="text-sm md:text-lg text-gray-300 font-light leading-relaxed max-w-4xl mx-auto uppercase tracking-[0.15em]"
                 style={{
                   animation: "fadeInUp 1.2s ease-out",
                 }}

@@ -10,8 +10,6 @@ const _serif = Playfair_Display({
   variable: "--font-serif",
 });
 
-const NEXT_PUBLIC_VERCEL_URL = process.env.NEXT_PUBLIC_VERCEL_URL;
-
 export const metadata: Metadata = {
   title: 'Kimhab Ork - Coming Soon',
   description: 'Affordable Luxury Fashion. Coming Soon.',
