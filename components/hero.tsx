@@ -51,10 +51,10 @@ export function Hero() {
         <div className="relative flex items-center justify-center mx-auto hidden md:block lg:block">
           <div className="flex items-center justify-center w-full aspect-[4/5]">
             <Image
-              src="https://ik.imagekit.io/kimhabork/assets/coming-cover.png"
+              src="https://ik.imagekit.io/kimhabork/assets/coming-soon.jpg"
               alt="hero image"
-              width={1200}
-              height={660}
+              width={198}
+              height={2348}
               priority
               className="object-cever w-full h-auto"
             />
