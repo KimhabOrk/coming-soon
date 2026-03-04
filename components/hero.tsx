@@ -6,12 +6,12 @@ export function Hero() {
     <main className="relative z-10 min-h-screen px-4 py-8">
       {/* Logo/Brand section */}
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-1 mb-16">
-        <div className="flex flex-col items-center justify-center mx-auto">
+        <div className="relatuive flex flex-col items-center justify-center mx-auto">
           <div className="flex justify-center items-center mx-auto h-full">
             <Image
               src="https://ik.imagekit.io/kimhabork/assets/kho-dark.png"
-              width={1200}
-              height={276}
+              width={800}
+              height={194}
               alt="Logo image"
               priority
               className="h-full w-full object-cover mb-3 md:mb-8"
@@ -44,8 +44,11 @@ export function Hero() {
                 Affordable Luxury Fashion
               </p>
           </div>
+          <div className="flex justify-center items-center mx-auto hidden md:block lg:block">
+            <Newsletter />
+          </div>
         </div>
-        <div className="flex items-center justify-center mx-auto md:p-3 lg:p-6 w-full hidden md:block lg:block">
+        <div className="relative flex items-center justify-center mx-auto md:p-3 lg:p-6 hidden md:block lg:block">
           <div className="flex items-center justify-center w-full aspect-[4/5] rounded-xl">
             <Image
               src="https://ik.imagekit.io/kimhabork/assets/coming-cover.jpg"
@@ -58,7 +61,7 @@ export function Hero() {
         </div>
       </div>
       {/* Newsletter form */}
-      <div className="flex justify-center items-center mx-auto">
+      <div className="flex justify-center items-center mx-auto md:hidden lg:hidden">
         <Newsletter />
       </div>
     </main>
