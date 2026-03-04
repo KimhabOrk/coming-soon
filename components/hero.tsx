@@ -6,6 +6,18 @@ export function Hero() {
     <main className="relative z-10 min-h-screen px-4 py-8">
       {/* Logo/Brand section */}
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-1 my-12 md:my-16">
+        <div className="relative flex items-center justify-center mx-auto hidden md:block lg:block">
+          <div className="flex items-center justify-center w-full aspect-[4/5]">
+            <Image
+              src="https://ik.imagekit.io/kimhabork/assets/coming-soon.jpg"
+              alt="hero image"
+              width={198}
+              height={2348}
+              priority
+              className="object-cever w-full h-auto"
+            />
+          </div>
+        </div>
         <div className="relatuive flex flex-col items-center justify-center mx-auto">
           <div className="flex justify-center items-center mx-auto w-full h-auto">
             <Image
@@ -46,18 +58,6 @@ export function Hero() {
           </div>
           <div className="flex justify-center items-center mx-auto hidden md:block lg:block mt-6 pt-6">
             <Newsletter />
-          </div>
-        </div>
-        <div className="relative flex items-center justify-center mx-auto hidden md:block lg:block">
-          <div className="flex items-center justify-center w-full aspect-[4/5]">
-            <Image
-              src="https://ik.imagekit.io/kimhabork/assets/coming-soon.jpg"
-              alt="hero image"
-              width={198}
-              height={2348}
-              priority
-              className="object-cever w-full h-auto"
-            />
           </div>
         </div>
       </div>
