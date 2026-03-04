@@ -7,14 +7,16 @@ export function Hero() {
       {/* Logo/Brand section */}
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-1 mb-16">
         <div className="flex flex-col items-center justify-center mx-auto">
-          <div className="relative flex justify-center items-center mx-auto w-full h-auto aspect-video px-4 md:px-6">
+          <div className="flex justify-center items-center mx-auto h-full px-4 md:px-6">
             <Image
               src="/kho-dark.png"
+              width={1200}
+              height={276}
               alt="Logo image"
-              fill
               priority
-              className="object-contain mb-8"
+              className="h-full w-full object-cover mb-3 md:mb-8"
             />
+          </div>
             {/* Main heading */}
             <div className="max-w-6xl mx-auto text-center space-y-4">
               <h2
@@ -41,7 +43,6 @@ export function Hero() {
               >
                 Affordable Luxury Fashion
               </p>
-            </div>
           </div>
         </div>
         <div className="relative flex items-center justify-center mx-auto md:p-6 lg:p-8 hidden md:block lg:block">
