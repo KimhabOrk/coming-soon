@@ -32,19 +32,19 @@ export function Hero() {
             {/* Main heading */}
             <div className="w-full mx-auto text-center space-y-4">
               <h2
-                className="text-3xl md:text-5xl lg:text-6xl font-semibold leading-tight text-white max-w-4xl md:max-w-2xl lg:max-w-2xl"
+                className="text-3xl md:text-5xl lg:text-6xl font-semibold leading-tight text-white"
                 style={{
                   animation: "fadeInUp 1s ease-out",
                   fontFamily: "Playfair Display, serif",
                 }}
               >
                 <span>Something</span>
-                <span>
-                  <span className="text-primary animate-shimmer">
+                <span className="block">
+                  <span className="text-primary inline-block animate-shimmer">
                     Exquisite
                   </span>
                 </span>
-                <span>is Coming</span>
+                <span className="block">is Coming</span>
               </h2>
 
               <p
