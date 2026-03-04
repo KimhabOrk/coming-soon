@@ -13,6 +13,7 @@ const _serif = Playfair_Display({
 export const metadata: Metadata = {
   title: 'Kimhab Ork - Coming Soon',
   description: 'Affordable Luxury Fashion. Coming Soon.',
+  verification: 'google-site-verification=yeuFnQXHqjX1bdE_zygqNNwrp5IwlUEMYBDjAJSrc9M',
   icons: {
     shortcut: { url: "/favicon.ico", type: "image/x-icon" },
     icon: [
