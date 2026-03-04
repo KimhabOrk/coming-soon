@@ -1,8 +1,27 @@
 import { Newsletter } from "@/components/newsletter";
 import Image from "next/image";
+import { AuroraText } from "@/components/aurora";
 
 export function Hero() {
   return (
+    <>
+      <style>{`
+        @keyframes aurora {
+          0%   { background-position: 0% 50%; }
+          50%  { background-position: 100% 50%; }
+          100% { background-position: 0% 50%; }
+        }
+        /* The animation duration is now set via inline styles, so we don't need the --duration variable here. */
+        .animate-aurora {
+          animation-name: aurora;
+          animation-timing-function: ease-in-out;
+          animation-iteration-count: infinite;
+        }
+        @media (prefers-reduced-motion: reduce) {
+          .animate-aurora { animation: none; }
+        }
+      `}</style>
+      
     <main className="relative z-10 min-h-screen px-4 md:px-20 lg:px-24 py-8">
       {/* Logo/Brand section */}
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 justify-center gap-1 my-12 md:my-16">
@@ -30,7 +49,7 @@ export function Hero() {
             />
           </div>
             {/* Main heading */}
-            <div className="w-full mx-auto text-center space-y-4">
+            <div className="w-full mx-auto justify-center items-center text-center space-y-4">
               <h2
                 className="text-3xl md:text-5xl lg:text-6xl font-semibold leading-tight text-white"
                 style={{
@@ -38,11 +57,11 @@ export function Hero() {
                   fontFamily: "Playfair Display, serif",
                 }}
               >
-                <span>Something</span>
+                Something{" "}
                 <span className="block">
-                  <span className="text-primary inline-block animate-shimmer">
+                  <AuroraText speed={1} className="inline-block" colors={["#38BDF8", "#1A1EED", "#EE1A4E"]}>
                     Exquisite
-                  </span>
+                  </AuroraText>{" "}
                 </span>
                 <span className="block">is Coming</span>
               </h2>
@@ -66,5 +85,6 @@ export function Hero() {
         <Newsletter />
       </div>
     </main>
+    </>
   );
 }
