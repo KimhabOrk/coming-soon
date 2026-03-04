@@ -48,8 +48,8 @@ export function Hero() {
             <Newsletter />
           </div>
         </div>
-        <div className="relative flex items-center justify-center mx-auto md:m-3 lg:m-6 hidden md:block lg:block">
-          <div className="flex items-center justify-center w-full aspect-[9/16]">
+        <div className="relative flex items-center justify-center mx-auto hidden md:block lg:block">
+          <div className="flex items-center justify-center w-full aspect-[4/5]">
             <Image
               src="https://ik.imagekit.io/kimhabork/assets/indi.png"
               alt="hero image"
