@@ -20,7 +20,7 @@ export function Background() {
   }, []);
   
   return (
-    <div className="fixed relative inset-0 bg-black">
+    <div className="fixed inset-0 bg-black">
       <div className="relative w-screen h-full overflow-hidden">
         <video
           ref={videoRef}
@@ -48,8 +48,8 @@ export function Background() {
             type="video/mp4"
           />
         </video>
+        <div className="absolute inset-0 bg-black opacity-30" />
       </div>
-      <div className="fixed inset-0 bg-black/40" />
     </div>
   )
 }
