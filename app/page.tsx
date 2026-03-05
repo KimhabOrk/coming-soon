@@ -1,10 +1,27 @@
 "use client";
 
+import { useEffect, useRef } from "react";
 import { Hero } from "@/components/hero";
 import { Footer } from "@/components/footer";
 import { Animations } from "@/components/animations";
 
 export default function Home() {
+  const videoRef = useRef < HTMLVideoElement > (null);
+  
+  useEffect(() => {
+    if (videoRef.current) {
+      // Attempt to play video with error handling
+      const playVideo = async () => {
+        try {
+          await videoRef.current?.play();
+        } catch (error) {
+          console.log("Video autoplay failed:", error);
+        }
+      };
+      playVideo();
+    }
+  }, []);
+  
   return (
     <div className="min-h-screen bg-black text-white overflow-hidden">
       <Animations />
