@@ -51,7 +51,7 @@ export function Hero() {
             {/* Main heading */}
             <div className="w-full mx-auto justify-center items-center text-center space-y-4">
               <h2
-                className="text-4xl md:text-5xl lg:text-6xl font-serif font-semibold leading-tight"
+                className="text-4xl md:text-6xl lg:text-7xl font-serif font-semibold leading-tight"
                 style={{
                   animation: "fadeInUp 1s ease-out",
                   fontFamily: "Playfair Display, serif",
