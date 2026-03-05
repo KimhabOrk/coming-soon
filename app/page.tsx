@@ -54,7 +54,7 @@ export default function Home() {
             />
           </video>
         </div>
-        <div className="absolute inset-0" />
+        <div className="absolute inset-0 bg-black/60" />
         <Hero />
         <Footer />
       </div>
