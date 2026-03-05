@@ -44,7 +44,7 @@ export function Newsletter() {
   }
 
   return (
-    <form onSubmit={handleSubmit} className="w-full max-w-6xl mb-12">
+    <form onSubmit={handleSubmit} className="w-full mb-12">
       <div className="relative group">
         <input
           type="email"
