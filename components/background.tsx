@@ -49,7 +49,7 @@ export function Background() {
           />
         </video>
       </div>
-      <div className="absolute inset-0 bg-black/40" />
+      <div className="fixed inset-0 bg-black/40" />
     </div>
   )
 }
