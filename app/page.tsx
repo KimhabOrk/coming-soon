@@ -29,7 +29,7 @@ export default function Home() {
         <div className="absolute inset-0">
           <video
             ref={videoRef}
-            className="w-full h-full object-cover md:hidden lg:hidden"
+            className="w-full h-full object-cover md:hidden lg:hidden opacity-60"
             autoPlay
             loop
             muted
@@ -42,7 +42,7 @@ export default function Home() {
           </video>
           <video
             ref={videoRef}
-            className="w-full h-full object-cover hidden md:block lg:block"
+            className="w-full h-full object-cover hidden md:block lg:block opacity-60"
             autoPlay
             loop
             muted
@@ -54,7 +54,7 @@ export default function Home() {
             />
           </video>
         </div>
-        <div className="absolute inset-0 bg-black/60" />
+        <div className="absolute inset-0" />
         <Hero />
         <Footer />
       </div>
