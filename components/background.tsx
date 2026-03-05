@@ -20,7 +20,7 @@ export function Background() {
   }, []);
   
   return (
-    <div className="fixed inset-0 bg-black">
+    <div className="fixed relative inset-0 bg-black">
       <div className="relative w-screen h-full overflow-hidden">
         <video
           ref={videoRef}

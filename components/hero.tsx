@@ -24,7 +24,7 @@ export function Hero() {
       
     <main className="relative z-10 min-h-screen h-screen px-4 md:px-20 lg:px-24 pt-12 md:pt-14">
       {/* Logo/Brand section */}
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 justify-center my-12 md:my-16">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 justify-center my-8 md:my-16">
         <div className="relative flex items-center justify-center mx-auto hidden md:block lg:block">
           <div className="flex items-center justify-center w-full aspect-[4/5]">
             <Image
@@ -51,7 +51,7 @@ export function Hero() {
             {/* Main heading */}
             <div className="w-full mx-auto justify-center items-center text-center space-y-4">
               <h2
-                className="text-4xl md:text-6xl lg:text-7xl font-serif font-semibold leading-tight"
+                className="text-4xl md:text-5xl lg:text-6xl font-serif font-semibold leading-tight"
                 style={{
                   animation: "fadeInUp 1s ease-out",
                   fontFamily: "Playfair Display, serif",
@@ -63,7 +63,7 @@ export function Hero() {
               </h2>
 
               <p
-                className="text-sm md:text-xl text-gray-300 font-light leading-relaxed mx-auto uppercase tracking-[0.15em]"
+                className="text-sm md:text-lg text-gray-300 font-light leading-tight mx-auto uppercase tracking-[0.15em]"
                 style={{
                   animation: "fadeInUp 1.2s ease-out",
                 }}
