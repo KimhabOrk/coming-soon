@@ -1,83 +1,54 @@
-import { useEffect, useState } from 'react'
+"use client";
+
+import { useEffect, useRef } from "react";
 
 export function Background() {
-  const [mousePos, setMousePos] = useState({ x: 0, y: 0 })
-
+  const videoRef = useRef < HTMLVideoElement > (null);
+  
   useEffect(() => {
-    const handleMouseMove = (e: MouseEvent) => {
-      setMousePos({ x: e.clientX, y: e.clientY })
+    if (videoRef.current) {
+      // Attempt to play video with error handling
+      const playVideo = async () => {
+        try {
+          await videoRef.current?.play();
+        } catch (error) {
+          console.log("Video autoplay failed:", error);
+        }
+      };
+      playVideo();
     }
-
-    window.addEventListener('mousemove', handleMouseMove)
-
-    return () => {
-      window.removeEventListener('mousemove', handleMouseMove)
-    }
-  }, [])
-
+  }, []);
+  
   return (
-    <>
-      {/* Animated background elements */}
-      <div className="fixed inset-0 pointer-events-none">
-        {/* Floating orbs */}
-        <div
-          className="absolute w-96 h-96 rounded-full opacity-10"
-          style={{
-            background: 'radial-gradient(circle, #EE1A4E 0%, transparent 70%)',
-            top: '10%',
-            right: '10%',
-            animation: 'float 20s ease-in-out infinite',
-          }}
-        />
-        <div
-          className="absolute w-80 h-80 rounded-full opacity-5"
-          style={{
-            background: 'radial-gradient(circle, #EE1A4E 0%, transparent 70%)',
-            bottom: '20%',
-            left: '5%',
-            animation: 'float 25s ease-in-out infinite reverse',
-          }}
-        />
-        <div
-          className="absolute w-96 h-96 rounded-full opacity-10"
-          style={{
-            background: 'radial-gradient(circle, #EE1A4E 0%, transparent 70%)',
-            top: '40%',
-            right: '30%',
-            animation: 'float 20s ease-in-out infinite',
-          }}
-        />
-        <div
-          className="absolute w-80 h-80 rounded-full opacity-5"
-          style={{
-            background: 'radial-gradient(circle, #EE1A4E 0%, transparent 70%)',
-            bottom: '60%',
-            left: '1.5%',
-            animation: 'float 25s ease-in-out infinite reverse',
-          }}
-        />
-        {/* Grid pattern */}
-        <div
-          className="absolute inset-0 opacity-[0.02]"
-          style={{
-            backgroundImage: `
-              linear-gradient(0deg, transparent 24%, rgba(238, 26, 78, 0.05) 25%, rgba(238, 26, 78, 0.05) 26%, transparent 27%, transparent 74%, rgba(238, 26, 78, 0.05) 75%, rgba(238, 26, 78, 0.05) 76%, transparent 77%, transparent),
-              linear-gradient(90deg, transparent 24%, rgba(238, 26, 78, 0.05) 25%, rgba(238, 26, 78, 0.05) 26%, transparent 27%, transparent 74%, rgba(238, 26, 78, 0.05) 75%, rgba(238, 26, 78, 0.05) 76%, transparent 77%, transparent)
-            `,
-            backgroundSize: '80px 80px',
-          }}
-        />
+    <div className="fixed inset-0 bg-black">
+      <div className="relative w-screen h-full overflow-hidden">
+        <video
+          ref={videoRef}
+          className="w-full h-full object-cover md:hidden lg:hidden"
+          autoPlay
+          loop
+          muted
+          playsInline
+        >
+          <source
+            src="https://ik.imagekit.io/kimhabork/assets/vid-port.mp4"
+            type="video/mp4"
+          />
+        </video>
+        <video
+          ref={videoRef}
+          className="w-full h-full object-cover hidden md:block lg:block"
+          autoPlay
+          loop
+          muted
+          playsInline
+        >
+          <source
+            src="https://ik.imagekit.io/kimhabork/assets/vid-land.mp4"
+            type="video/mp4"
+          />
+        </video>
       </div>
-
-      {/* Cursor follower */}
-      <div
-        className="fixed w-32 h-32 rounded-full border-2 border-primary opacity-20 pointer-events-none hidden lg:block"
-        style={{
-          left: `${mousePos.x - 64}px`,
-          top: `${mousePos.y - 64}px`,
-          transition: 'all 0.3s ease-out',
-        }}
-      />
-    </>
+    </div>
   )
 }
