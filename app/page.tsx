@@ -6,8 +6,8 @@ import { Footer } from "@/components/footer";
 import { Animations } from "@/components/animations";
 
 export default function Home() {
-  const videoRef = useRef < HTMLVideoElement > (null);
-  
+  const videoRef = useRef<HTMLVideoElement>(null);
+
   useEffect(() => {
     if (videoRef.current) {
       // Attempt to play video with error handling
@@ -21,7 +21,7 @@ export default function Home() {
       playVideo();
     }
   }, []);
-  
+
   return (
     <div className="min-h-screen bg-black text-white overflow-hidden">
       <Animations />
@@ -56,8 +56,8 @@ export default function Home() {
         </div>
         <div className="absolute inset-0 bg-black/50" />
         <Hero />
+        <Footer />
       </div>
-      <Footer />
     </div>
   );
 }
