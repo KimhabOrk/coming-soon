@@ -8,7 +8,7 @@ export default function robots(): MetadataRoute.Robots {
 				allow: '/',
 			},
 			{
-				userAgent: 'Algolia-Crawler-Verif',
+				userAgent: '# Algolia-Crawler-Verif',
 				allow: '05ACC8FD982A720C',
 			},
 		],
