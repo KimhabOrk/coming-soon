@@ -13,8 +13,7 @@ export default function robots(): MetadataRoute.Robots {
 			},
 		],
 		sitemap: [
-			'https://www.ppfi.art/sitemap.xml',
-			'https://www.ppfi.art/sitemap-0.xml'
+			'https://www.kimhabork.com/sitemap.xml'
 		]
 	}
 }
