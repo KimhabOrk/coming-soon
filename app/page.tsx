@@ -9,13 +9,13 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-black text-white overflow-hidden">
       <Animations />
-      <div className="relative w-screen h-full overflow-hidden bg-black">
+      <div className="relative w-screen h-screen overflow-hidden bg-black">
         <div className="absolute inset-0">
           <Image
             src="https://ik.imagekit.io/kimhabork/assets/portrait-bg.png"
             className="w-full h-full object-cover md:hidden lg:hidden opacity-60"
-            height={1169}
-            width={826}
+            height={1920}
+            width={1080}
             alt="background image"
             priority
           />
