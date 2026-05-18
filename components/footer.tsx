@@ -58,7 +58,7 @@ export function Footer() {
             </Link>
           </div>
         </div>
-        <div className="max-w-6xl mx-auto mt-5 pt-1.5 md:mt-7 pt-4 text-center text-gray-400 text-xs md:text-md">
+        <div className="max-w-6xl mx-auto mt-5 pt-2 md:mt-7 pt-4 text-center text-gray-400 text-xs md:text-md">
           <p>© {new Date().getFullYear()} Kimhab Ork. All rights reserved.</p>
         </div>
       </div>
