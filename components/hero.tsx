@@ -1,5 +1,6 @@
 import { Newsletter } from "@/components/newsletter";
 import Image from "next/image";
+import { Footer } from "@/components/footer";
 import { AuroraText } from "@/components/aurora";
 
 export function Hero() {
@@ -63,7 +64,7 @@ export function Hero() {
               </h2>
 
               <p
-                className="text-sm md:text-lg text-gray-300 font-light leading-tight mx-auto pt-2 md:pt-4 uppercase"
+                className="text-sm font-md:text-lg text-gray-300 font-light leading-tight mx-auto pt-2 md:pt-4 uppercase"
                 style={{
                   animation: "fadeInUp 1.2s ease-out",
                 }}
@@ -80,6 +81,7 @@ export function Hero() {
       <div className="flex justify-center items-center mx-auto md:hidden lg:hidden">
         <Newsletter />
       </div>
+      <Footer />
     </main>
     </>
   );

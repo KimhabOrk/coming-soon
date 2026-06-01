@@ -1,7 +1,6 @@
 "use client";
 
 import { Hero } from "@/components/hero";
-import { Footer } from "@/components/footer";
 import { Animations } from "@/components/animations";
 import Image from "next/image"
 
@@ -30,7 +29,6 @@ export default function Home() {
         </div>
         <div className="absolute inset-0 bg-black/40" />
         <Hero />
-        <Footer />
       </div>
     </div>
   );
