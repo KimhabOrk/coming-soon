@@ -1,6 +1,5 @@
 import { Newsletter } from "@/components/newsletter";
 import Image from "next/image";
-import { Footer } from "@/components/footer";
 import { AuroraText } from "@/components/aurora";
 
 export function Hero() {
@@ -81,7 +80,6 @@ export function Hero() {
       <div className="flex justify-center items-center mx-auto md:hidden lg:hidden">
         <Newsletter />
       </div>
-      <Footer />
     </main>
     </>
   );

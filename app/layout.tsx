@@ -1,5 +1,6 @@
 import type { Viewport, Metadata } from 'next'
 import { Geist, Geist_Mono, Playfair_Display } from 'next/font/google'
+import { Footer } from "@/components/footer";
 import { GoogleTagManager } from "@next/third-parties/google"
 import './globals.css'
 
@@ -143,6 +144,7 @@ export default function RootLayout({
       <GoogleTagManager gtmId="GTM-T7RWXN4P" />
       <body className="font-sans antialiased">
         {children}
+        <Footer />
       </body>
     </html>
   )
