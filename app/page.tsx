@@ -6,7 +6,7 @@ import Image from "next/image"
 
 export default function Home() {
   return (
-    <div className="min-h-screen h-screen bg-black text-white overflow-hidden">
+    <div className="flex-1 bg-black text-white overflow-hidden">
       <Animations />
       <div className="relative w-screen h-full overflow-hidden bg-black">
         <div className="absolute inset-0">

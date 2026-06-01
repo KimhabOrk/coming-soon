@@ -140,10 +140,12 @@ export default function RootLayout({
   children: React.ReactNode
 } > ) {
   return (
-    <html lang="en">
+    <html lang="en" className="h-screen">
       <GoogleTagManager gtmId="GTM-T7RWXN4P" />
-      <body className="font-sans antialiased">
-        {children}
+      <body className="font-sans antialiased h-screen flex flex-col">
+        <div className="flex-1 flex flex-col">
+          {children}
+        </div>
         <Footer />
       </body>
     </html>
