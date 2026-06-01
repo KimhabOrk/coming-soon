@@ -8,7 +8,7 @@ export default function Home() {
   return (
     <div className="flex-1 bg-black text-white overflow-hidden">
       <Animations />
-      <div className="relative w-screen h-full overflow-hidden bg-black">
+      <div className="relative w-screen h-screen overflow-hidden bg-black">
         <div className="absolute inset-0">
           <Image
             src="https://ik.imagekit.io/kimhabork/assets/portrait-bg.png"
