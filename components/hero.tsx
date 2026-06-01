@@ -22,7 +22,7 @@ export function Hero() {
         }
       `}</style>
       
-    <main className="relative z-10 min-h-screen h-screen px-4 md:px-20 lg:px-24 pt-18 md:pt-16">
+    <main className="relative z-10 min-h-screen px-4 md:px-20 lg:px-24 pt-18 md:pt-16">
       {/* Logo/Brand section */}
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 justify-center my-8 md:my-16">
         <div className="relative flex items-center justify-center mx-auto hidden md:block lg:block">
