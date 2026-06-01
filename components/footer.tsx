@@ -5,7 +5,7 @@ import Image from "next/image";
 export function Footer() {
   return (
     <footer className="relative z-10 border-t border-white/10 bg-black/50">
-      <div className="relative pb-6 pt-2 px-4 md:px-6 lg:px-8">
+      <div className="relative mb-6 pt-6 px-4 md:px-6 lg:px-8">
         <div className="max-w-6xl md:max-w-8xl mx-auto flex justify-center items-center text-center">
           <div className="flex gap-6 md:gap-10 justify-center items-center mx-auto">
             <Link href="https://facebook.com/kimhaborkofficial">
